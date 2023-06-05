@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style3.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #formulario2 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post" id="form">
+        <div class="form">
+            <h1>Calcular Plan</h1>
+            <div class="grupo">
+                <input type="number" name="cantidadCuotas" id="cantidadCuotas" required><span class="barra"></span>
+                <label for="cantidadCuotas">Cantidad de Cuotas</label>
+            </div>
+            <div class="grupo">
+                <input type="number" name="valorVehiculo" id="valorVehiculo" required><span class="barra"></span>
+                <label for="valorVehiculo">Valor del Vehículo</label>
+            </div>
+            <div class="grupo">
+                <input type="number" name="tna" id="tna" required><span class="barra"></span>
+                <label for="tna">Tna</label>
+            </div>
+            <div class="grupo">
+                <input type="number" name="patenteAnual" id="patenteAnual" required><span class="barra"></span>
+                <label for="patenteAnual">Patente anual</label>
+            </div>
+                <button id="botonVehiculo" onclick="mostrar2doformulario();">Quiero entregar un vehiculo</button>
+                <div id="formulario2">
+                    <button id="boton" onclick="ocultar2doformulario();" >Volver</button>
+                    <div class="formVehiculo">
+                        <h1>Tu Vehículo</h1>
+                        <div class="grupo">
+                          <input type="text" name="marca" id="marca" required><span class="barra"></span>
+                          <label for="marca">Marca</label>
+                        </div>
+                        <div class="grupo">
+                          <input type="text" name="modelo" id="modelo" required><span class="barra"></span>
+                          <label for="modelo">Modelo</label>
+                        </div>
+                        <div class="grupo">
+                          <input type="number" name="año" id="año" required><span class="barra"></span>
+                          <label for="año">Año</label>
+                        </div>
+                        <div class="grupo">
+                          <input type="number" name="kilometraje" id="kilometraje" required><span class="barra"></span>
+                          <label for="kilometraje">Kilometraje</label>
+                        </div>
+
+                        <script>
+                            function mostrar2doformulario () {
+                                document.getElementById("formulario2").style.display="block";
+                            }
+                            function ocultar2doformulario () {
+                                document.getElementById("formulario2").style.display="none";
+                            }
+                        </script>
+                        <button type="submit">Calcular</button>
+                      </div>
+                </div>
+            </div>
+            <button id="calculo1">Calcular</button>
+        </div>
+    </form>
+
+
+    <div id="valorEntrega">
+    <h1 id="cartel"></h1>
+    </div>
+    
+        <div id="container" style="overflow-y: auto; max-height: 1000px;">
+	        <table id="tabla" border="1">
+                <thead>
+                    <tr>
+                        <th>Cuota</th><br>
+                        <th>Monto</th>
+                        <th>Patente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+
+	        </table>
+
+
+</div>
+
+    <script src="main3.js"></script>
+</body>
+</html>
