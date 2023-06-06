@@ -34,7 +34,7 @@ form{
     padding: 40px 0;
     box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    margin-left: -2800px;
+    margin-left: -2300px;
 }
 
 .form{
@@ -56,26 +56,26 @@ background: #fff;
 }
 
 .formVehiculo {
-position: fixed;
-left: 1500px;
-top: 1016px;
-background: #fff;
-padding: 40px 0;
-box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
-border-radius: 10px;
-
+    position: fixed;
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    left: calc(50% - 700px);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-    input{
-        background: none;
-        color: #c6c6c6;
-        font-size: 18px;
-        padding: 10px 10px 10px 5px;
-        display: block;
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid var(--colorDeTextos);
-    }
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorDeTextos);
+}
 
 
 
@@ -147,6 +147,11 @@ button{
 
 @media screen and (max-width:500px){
     form{
+        width: 80%;
+    }
+}
+@media screen and (max-width:500px){
+    .formulario-adicional{
         width: 80%;
     }
 }
@@ -267,12 +272,12 @@ body {
   }
   
 
-  @keyframes fadeIn {
+@keyframes fadeIn {
     from {
-      opacity: 0;
+    opacity: 0;
     }
     to {
-      opacity: 1;
+    opacity: 1;
     }
   }
   
@@ -294,8 +299,8 @@ body {
  */
  #valorEntrega {
   position: absolute;
-  top: 650px;
-  left: 45%;
+  top: 350px;
+  left: 30%;
   color: rgba(0,0,0,.6);
   background: #6e6e6e;
   text-shadow: 3px 2px 3px rgba(255,255,255,.2);
